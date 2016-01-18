@@ -55,6 +55,7 @@ include_directories(
 set(SOURCES
 	include/resourcelocator/stdutils.hpp
 	include/resourcelocator/resourcelocator.hpp
+	include/resourcelocator/gladelocator.hpp
 
 	src/resourcelocator.cpp
 )
