@@ -75,6 +75,11 @@ target_link_libraries(${binname} ${LIBRARIES})
 set_target_properties(${binname} PROPERTIES COMPILE_FLAGS "-Wall -Wextra")
 
 
+## Tests
+add_executable(test_gladelocator src/test/test_gladelocator.cpp)
+target_link_libraries(test_gladelocator ${binname})
+
+
 ### Export package {JdeRobot-sandbox ONLY}
 # declare package to be used externally
 #set(PROJECT_LIBRARIES
