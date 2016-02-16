@@ -1,9 +1,15 @@
-#  Copyright (C) 2016 JDE Developers Team
-#    Cmake template authors:
-#      2016 Jan, Victor Arribas <v.arribas.urjc@gmail.com>
+#  Copyright (C) 2016 JdeRobot-ng
+#  This file is a template for simplify develop of components for JdeRobot.
+#  Template is under dual license, "GPLv3" and "Creative Commons-BY-NC-SA"
+#  and was wrote by Victor Arribas <v.arribas.urjc@gmail.com> at January 2016
+#  to be compliant with JdeRobot-sandbox and JdeRobot-ng.
+#  You can get a fresh copy at:
+#    https://github.com/jderobot-varribas/skel_component.git
+#
+#  Rest code remains to component's author(s).
 #  Authors:
 #    Victor Arribas <v.arribas.urjc@gmail.com>
-#
+
 
 cmake_minimum_required(VERSION 2.8.4)
 
@@ -47,7 +53,7 @@ list(APPEND LIBRARIES
 include_directories(
 	${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-#include(IDE_show_headers) {JdeRobot-sandbox ONLY}
+include(IDE_show_headers)
 
 ## Sources
 # sources MUST be placed under "src/" directory
@@ -80,9 +86,9 @@ add_executable(test_gladelocator src/test/test_gladelocator.cpp)
 target_link_libraries(test_gladelocator ${binname})
 
 
-### Export package {JdeRobot-sandbox ONLY}
+### Export package
 # declare package to be used externally
-#set(PROJECT_LIBRARIES
-#	${binname}
-#)
-#declare_package(${PROJECT_NAME} ${PROJECT_LIBRARIES})
+set(PROJECT_LIBRARIES
+	${binname}
+)
+declare_package(${PROJECT_NAME} ${PROJECT_LIBRARIES})
