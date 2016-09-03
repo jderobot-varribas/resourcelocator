@@ -1,9 +1,15 @@
-#  Copyright (C) 2016 JDE Developers Team
-#    Cmake template authors:
-#      2016 Jan, Victor Arribas <v.arribas.urjc@gmail.com>
+#  Copyright (C) 2016 JdeRobot-ng
+#  This file is a template to simplify develop of components for JdeRobot.
+#  Template is under dual license, "GPLv3" and "Creative Commons-BY-NC-SA"
+#  and was wrote by Victor Arribas <v.arribas.urjc@gmail.com> at January 2016
+#  to be compliant with JdeRobot-sandbox and JdeRobot-ng.
+#  You can get a fresh copy at:
+#    https://github.com/jderobot-varribas/skel_component.git
+#
+#  Rest code remains to component's author(s) (GPLv3 or above).
 #  Authors:
 #    Victor Arribas <v.arribas.urjc@gmail.com>
-#
+
 
 cmake_minimum_required(VERSION 2.8.4)
 

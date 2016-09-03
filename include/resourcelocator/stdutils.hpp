@@ -1,5 +1,8 @@
 /*
- *  Copyright (C) 2015 JDE Developers Team
+ *  Copyright (C) 2015-2016 Victor Arribas
+ *
+ *  This file is part of resourcelocator
+ *  https://github.com/jderobot-varribas/resourcelocator
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -13,6 +16,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see http://www.gnu.org/licenses/.
+ *
  *  Authors :
  *       Victor Arribas Raigadas <.varribas.urjc@gmail.com>
  */
