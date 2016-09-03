@@ -16,6 +16,8 @@ cmake_minimum_required(VERSION 2.8.4)
 ## PROJECT_NAME
 # Define here your project name
 project(resourcelocator)
+set(PROJECT_VERSION 1.0.0)
+set(PROJECT_DESCRIPTION "A tiny and simple library to locate anything under preconfigured paths")
 # Sometimes output binary must have a custom name. Set it here:
 set(binname ${PROJECT_NAME})
 
@@ -86,3 +88,7 @@ set_target_properties(${binname} PROPERTIES COMPILE_FLAGS "-Wall -Wextra")
 #	${binname}
 #)
 #declare_package(${PROJECT_NAME} ${PROJECT_LIBRARIES})
+
+
+include(install_it.cmake)
+include(cpack_it.cmake)
